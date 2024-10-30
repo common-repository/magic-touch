@@ -1,0 +1,220 @@
+.MagicTouch img {
+    border: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+.MT_icon {
+    height: 16px;
+    width: 16px;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0px;
+    line-height: 0px;
+}
+
+.MT_icon:hover {
+    opacity: 1.0 !important;
+    filter: alpha(opacity=100) !important;
+}
+
+
+.MT_icon.toggleFullscreen {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 36px;
+    height: 36px;
+    background-image: url('graphics/fullscreen.png');
+}
+
+.MT_icon.toggleFullscreen.fullscreenOnly {
+    width: 100%;
+    height: 100%;
+    background-image: url('graphics/fullscreenOnly.png');
+    background-position: right top;
+    filter: none !important;
+}
+
+.MT_icon.toggleFullscreen.fullscreen {
+    background-image: url('graphics/close-big.png');
+    width: 52px;
+    height: 52px;
+}
+
+.MT_icon.toggleThumbnails {
+    width: 64px;
+    height: 48px;
+    background-image: url('graphics/navigate-up.png');
+}
+
+.MT_navigation.horizontal.top-right {
+    right: 36px !important;
+}
+.MT_navigation.horizontal.top-right.fullscreen {
+    right: 56px !important;
+    top: 18px !important;
+}
+
+.MT_navigation.vertical.top-right {
+    top: 38px !important;
+}
+.MT_navigation.vertical.top-right.fullscreen {
+    top: 56px !important;
+    right: 18px !important;
+}
+
+
+.MT_navigation.vertical .MT_icon {
+    margin-bottom: 2px;
+}
+
+.MT_navigation.horizontal .MT_icon {
+    margin-left: 2px;
+    float: left;
+}
+
+.MT_navigation .MT_icon.zoomIn {
+    background-image: url('graphics/plus.png');
+}
+
+.MT_navigation .MT_icon.zoomOut {
+    background-image: url('graphics/minus.png');
+}
+
+.MT_navigation .MT_icon.level {
+    height: 8px;
+    background-image: url('graphics/spot.png');
+}
+
+.MT_navigation.horizontal .MT_icon.level {
+    height: 16px;
+    width: 8px;
+}
+
+.MT_navigation .MT_icon.level.active {
+    opacity: 1.0 !important;
+    filter: alpha(opacity=100) !important;
+}
+
+.MT_arrows {
+    overflow: hidden;
+    width: 52px;
+    height: 52px;
+}
+
+.MT_arrows .MT_icon {
+    position: absolute;
+}
+
+.MT_arrows .MT_icon.moveUp {
+    top: 0px;
+    left: 18px;
+    background-image: url('graphics/up.png');
+}
+.MT_arrows .MT_icon.moveDown {
+    left: 18px;
+    top: 36px;
+    background-image: url('graphics/down.png');
+}
+.MT_arrows .MT_icon.resetView {
+    left: 18px;
+    top: 18px;
+    background-image: url('graphics/reset.png');
+}
+.MT_arrows .MT_icon.moveLeft {
+    left: 0px;
+    top: 18px;
+    background-image: url('graphics/left.png');
+}
+.MT_arrows .MT_icon.moveRight {
+    left: 36px;
+    top: 18px;
+    background-image: url('graphics/right.png');
+}
+
+.MT_preview {
+    overflow: hidden;
+}
+
+.MT_preview img {
+    display: block;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    border: 1px solid #c2c2c2;
+}
+
+.MT_preview .selection {
+    background-color: #c2c2c2;
+    border: 1px solid #ccc;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+
+.MT_messagebox {
+    background-color: #FFFFFF;
+    background-image: none;
+    border: 1px solid #AAAAAA;
+    display: block;
+    font-size: 10px;
+    color: #000;
+    overflow: hidden;
+    padding: 6px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 33%;
+    left: 33%;
+    z-index: 100;
+}
+
+.MT_messagebox.fullscreen {
+    font-size: 28px;
+    background-color: #000;
+    border-color: #ccc;
+    color: #fff;
+    top: 15px;
+}
+
+.MT_messagebox.error {
+    font-size: 12px;
+    color: #ff0000;
+}
+
+.MT_LoadingIcon {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    z-index: 100;
+    height: 42px;
+    width: 42px;
+    left: 50%;
+    top: 50%;
+    margin-left: -21px;
+    margin-top: -21px;
+    background: url('graphics/ajax-loader-big.gif') no-repeat center center;
+}
+
+.MT_container:-webkit-full-screen {
+    -webkit-backface-visibility: hidden !important;
+}
+
+ul.MagicSwipe {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+ul.MagicSwipe li  {
+    float: left;
+    list-style: none outside none;
+    margin: 5px 10px 5px 0;
+    padding: 0;
+
+}
